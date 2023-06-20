@@ -175,9 +175,9 @@ class TaskEnvironmentUpsideDown(gym.Env):
 
 
 # Plotting
-plt.plot(difficulty_levels, rewards)
-plt.xlabel('Difficulty Level')
-plt.ylabel('Reward')
-plt.title('Reward Function')
-plt.grid(True)
-plt.show()
+# plt.plot(difficulty_levels, rewards)
+# plt.xlabel('Difficulty Level')
+# plt.ylabel('Reward')
+# plt.title('Reward Function')
+# plt.grid(True)
+# plt.show()
