@@ -134,10 +134,10 @@ class TaskEnvironmentTwoPeak(gym.Env):
         std_dev = 0.2  # Standard deviation of the regular Gaussian distribution
 
         if difficulty_level < peak:
-            upside_down_peak = 1.0 - peak  # Peak difficulty level for the upside-down Gaussian distribution
-            upside_down_std_dev = std_dev  # Standard deviation of the upside-down Gaussian distribution
+            second_peak = 1.0 - peak  # Peak difficulty level for the second distribution
+            second_std_dev = std_dev  # Standard deviation of the second Gaussian distribution
 
-            reward = np.exp(-0.5 * ((difficulty_level - upside_down_peak) / upside_down_std_dev) ** 2)
+            reward = np.exp(-0.5 * ((difficulty_level - second_peak) / second_std_dev) ** 2)
             reward = max(0.0, reward - 0.3)
         else:
             reward = np.exp(-0.5 * ((difficulty_level - peak) / std_dev) ** 2)
