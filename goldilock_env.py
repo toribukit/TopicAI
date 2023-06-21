@@ -102,7 +102,7 @@ class TaskEnvironmentDynamic(gym.Env):
 #     if done:
 #         break
 
-class TaskEnvironmentUpsideDown(gym.Env):
+class TaskEnvironmentTwoPeak(gym.Env):
     def __init__(self, max_steps=200):
         self.difficulty_level = 0.0  # Initial difficulty level (ranging from 0 to 1)
         self.max_steps = max_steps  # Maximum number of steps before termination
